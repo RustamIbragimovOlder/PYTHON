@@ -19,3 +19,9 @@ while temp > 0:
     binary_number = str(temp % 2) + binary_number
     temp = temp // 2
 print(f'{decimal_number} -> {binary_number}')
+
+# Вариант 3 Преподаватель
+
+decimal_number = int(input('Введите десятичное число -> '))
+print(f'{decimal_number} -> {str(bin(decimal_number)[2 : : ])}')
+print(f'{decimal_number} -> {bin(decimal_number)[2 : : ]}')

@@ -26,7 +26,6 @@ else:
     result.append(list_check[int(len(list_check) / 2)] ** 2)
     print(f'{list_check} => {result}')
 
-
 # Вариант 2 Функция
 
 def product(list_check):
@@ -47,4 +46,19 @@ else:
     answer = product(list_check)
     answer.append(list_check[int(len(list_check) / 2)] ** 2)
     print(f'{list_check} => {answer}')
-    
+
+# Вариант 3 Преподаватель
+
+import random
+def product_pairs_numbers(mass):
+    result = []
+    if len(mass) % 2 == 0:
+        for i in range(len(mass) // 2):
+            result.append(mass[i] * mass[len(mass) - 1 - i])
+    else:
+        for i in range(len(mass) // 2 + 1):
+            result.append(mass[i] * mass[len(mass) - 1 - i])
+    return result
+a = [random.randint(1, 10) for i in range(9)]
+print(a)
+print(product_pairs_numbers(a))

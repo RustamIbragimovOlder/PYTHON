@@ -24,3 +24,18 @@ for i in range(len(list_check)):
 result = sum(list_odd_elements)
 print(f'{list_check} -> {list_odd_elements}')
 print(f'ответ -> {result}')
+
+# Вариант преподавателя
+
+import random
+def sum_odd_elements(mass):
+    count = 0
+    for i in range(1, len(mass), 2): # проход по массиву с 1-го элемента до конца
+        count += mass[i]
+    return count
+
+a = [random.randint(1, 10) for i in range(5)]
+print(a)
+print(sum_odd_elements(a))
+
+
