@@ -31,12 +31,17 @@ print(f'{a}x^2 + {b}x + c = 0')
 roots_quadratic_equation(a, b, c)
 
 
-# Вариант 2 Встроенная функция ???
+# Вариант 2 Встроенная функция
 
 import sympy
+
+print('Введите коэффициенты для уравнения:')
+a = float(input('a = '))
+b = float(input('b = '))
+c = float(input('c = '))
+
 x = sympy.Symbol('x')
-f = input()
-print(sympy.solve(f, x))
-# x ** 2 + 4 * x + 4 здесь цифры - это коэффициенты (a = 1, b = 4, c = 4)
-# вводить надо x ** 2 + 4 * x + 4
+f = a * x ** 2 + b * x + c
+answer = sympy.solve(f, x)
+print(f'{f} => {answer}')
 
