@@ -15,3 +15,4 @@ elif a == 3:
     print(logger.reading_telephone_directory())
 else:
     print('Такой режим находится в разработке')
+    

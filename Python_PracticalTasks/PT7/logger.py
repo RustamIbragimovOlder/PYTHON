@@ -8,3 +8,4 @@ def record_telephone_directory(data):
 def reading_telephone_directory():
     with open('telephone_directory.txt', 'r', encoding = 'utf-8') as f:
         return f.read()
+        

@@ -10,3 +10,4 @@ def search_subscriber(f):
     a = input('Введите фамилию/имя/отчество/телефон (или их часть) => ')
     b = list(filter(lambda x: a in x, f.split('\n')))
     return '\n'.join(b)
+    
