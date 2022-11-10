@@ -80,7 +80,7 @@ async def video_viewing_command(update: Update, context: ContextTypes.DEFAULT_TY
     # await update.bot.send_document(chat_id = chat_id chat_id, document='https://python-telegram-bot.org/static/testfiles/telegram.gif'))
     # await bot.send_video(chat_id = 894667527, video=open('update.message.chat.id.mp4', 'rb'))
     # await bot.send_video(chat_id = 894667527, video=open('894667527.mp4', 'rb'))
-    # bot = Bot(token="5715548573:AAFHStsDcP_U9tfw_99Yguoic-4BN-Eo4VM")
+    # bot = Bot(token="TOKEN")
     # await bot.send_video(chat_id = 894667527, video=open('C:\Users\Рустам Ибрагимов\repositories\PYTHON\Tobias Rauscher - Passion Loop (ORIGINAL).mp4', 'rb'))
     # await messages.sendMedia(chat_id = 894667527, video=open(data, 'rb'))
     # await update.message.sendMedia(chat_id = 894667527, video=open(data, 'rb'))
