@@ -3,7 +3,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, Messa
 from bots_commands import *
 from game_progress import *
 
-app = ApplicationBuilder().token("TOKEN").build()
+app = ApplicationBuilder().token("MY TOKEN").build()
 
 app.add_handler(CommandHandler("hi", hi_command))
 app.add_handler(CommandHandler("help", help_command))
@@ -18,8 +18,7 @@ app.add_handler(CommandHandler("edit", edit_command))
 app.add_handler(CommandHandler("game", game_command))
 app.add_handler(CommandHandler("draw", draw_command))
 app.add_handler(CommandHandler("s", start_game))
-app.add_handler(CommandHandler("download", video_download_command))
-app.add_handler(CommandHandler("viewing", video_viewing_command))
+app.add_handler(CommandHandler("video", video_command))
 app.add_handler(CommandHandler("valute", valute_command))
 app.add_handler(CommandHandler("type", well_command))
 
