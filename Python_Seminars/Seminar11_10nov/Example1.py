@@ -7,36 +7,31 @@
 # Определить промежутки, на котором f > 0
 # Определить промежутки, на котором f < 0
 
+import sympy
 
-def diskr(a, b, c):
-    return(b**2 - 4*a*c)
+x = sympy.Symbol('x')
+f = 5*x**2 + 10*x - 30
 
-def solve(a, b, c):
-    d = diskr(a, b, c)
-    if d < 0:
-        return ['Корней нет']
-    elif d == 0:
-        return [(-b + d**(0.5))/(2*a)]
-    else:
-        return [((-b + d**(0.5))/(2*a), (-b - d**0.5)/(2*a))]
+# Определить корни
+k = sympy.solve(f, x)
+print(k)
 
-def top(a, b, c):
-    return (-b/(2*a))
+diff = sympy.diff(f, x)
 
-def upnd(a, b, c):
-    x = 0
-    while True:
-        y = 5*x**2 + 10*x - 30
-        y1 = 5*x**2 + 10*x - 30
+# Найти интервалы, на которых функция возрастает
+print(sympy.solve(diff > 0, x))
 
+# Найти интервалы, на которых функция убывает
+print(sympy.solve(diff < 0, x))
 
+# Построение графика
+sympy.plotting.plot(f)
 
-a = int(input())
-b = int(input())
-c = int(input())
-print()
+# Вычислить вершину
+print(sympy.solve(diff, x))
 
+# Определить промежутки, на котором f > 0
+print(sympy.solve(f > 0, x))
 
-
-
-
+# Определить промежутки, на котором f < 0
+print(sympy.solve(f < 0, x))
